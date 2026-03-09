@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-/* General Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -22,19 +21,18 @@ header {
     text-align: center;
 }
 
-/* Improved Profile Picture */
 header img {
-    width: 160px;           /* default larger size */
-    max-width: 25%;         /* scales on very large screens */
+    width: 160px;
+    max-width: 25%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* subtle shadow */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
 }
 
 header img:hover {
-    transform: scale(1.05); /* slight zoom on hover */
+    transform: scale(1.05);
 }
 
 nav {
@@ -66,16 +64,6 @@ h2 {
     margin-bottom: 25px;
 }
 
-.btn {
-    display: inline-block;
-    background: #0a3d62;
-    color: white;
-    padding: 12px 20px;
-    margin-top: 15px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
 footer {
     text-align: center;
     padding: 20px;
@@ -84,7 +72,6 @@ footer {
     color: white;
 }
 
-/* CV Button Styles */
 .cv-button {
     display: inline-block;
     margin-top: 30px;
@@ -97,31 +84,24 @@ footer {
     border: 3px solid #0a3d62;
     border-radius: 10px;
     text-decoration: none;
-    box-shadow:
-        0 6px 0 #0a3d62,
-        0 12px 22px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 6px 0 #0a3d62, 0 12px 22px rgba(0,0,0,0.35);
     transition: all 0.2s ease;
 }
 
 .cv-button:hover {
     background: #f2f6fa;
     transform: translateY(-3px);
-    box-shadow:
-        0 9px 0 #0a3d62,
-        0 18px 28px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 9px 0 #0a3d62, 0 18px 28px rgba(0,0,0,0.4);
 }
 
 .cv-button:active {
     transform: translateY(4px);
-    box-shadow:
-        0 2px 0 #0a3d62,
-        0 6px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 0 #0a3d62, 0 6px 12px rgba(0,0,0,0.25);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 600px) {
     header img {
-        width: 120px; /* smaller on mobile */
+        width: 120px;
     }
 
     nav a {
@@ -143,12 +123,18 @@ footer {
     <img src="profile.jpg" alt="Abdullah Ishtiaq">
     <h1>Abdullah Ishtiaq</h1>
     <p>Mechanical & Management Engineer</p>
+
     <p>
         Mechanical and Management Engineer with 6+ years of experience in manufacturing,
         production planning, and industrial operations. Experienced in Lean manufacturing,
         CNC machining, ERP-driven operations, and data-driven process improvement.
     </p>
-    <a href="Abdullah_Ishtiaq_CV.pdf" class="cv-button" target="_blank">Download CV</a>
+
+    <!-- FIXED CV DOWNLOAD LINK -->
+    <a href="ABDULLAH%20ISHTIAQ%20CV.pdf" class="cv-button" download>
+        Download CV
+    </a>
+
 </header>
 
 <nav>
@@ -160,114 +146,115 @@ footer {
 </nav>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Mechanical and Management Engineer currently completing my MSc in Management Engineering at the University of Padua, Italy.</p>
-    <p>My professional experience spans manufacturing operations, production planning, supply chain coordination, and industrial process optimization.</p>
-    <p>I have led production teams, implemented Lean manufacturing initiatives, and optimized workflows in CNC machining and industrial production environments.</p>
+<h2>About Me</h2>
+<p>I am a Mechanical and Management Engineer currently completing my MSc in Management Engineering at the University of Padua, Italy.</p>
+<p>My professional experience spans manufacturing operations, production planning, supply chain coordination, and industrial process optimization.</p>
+<p>I have led production teams, implemented Lean manufacturing initiatives, and optimized workflows in CNC machining and industrial production environments.</p>
 </section>
 
 <section id="experience">
-    <h2>Professional Experience</h2>
+<h2>Professional Experience</h2>
 
-    <div class="job">
-        <h3>Process Engineer — Integraa Holding Srl</h3>
-        <p>Sep 2025 – Mar 2026</p>
-        <ul>
-            <li>Applied Lean and Kaizen methods to streamline operations</li>
-            <li>Performed process mapping and root cause analysis</li>
-            <li>Led continuous improvement initiatives</li>
-            <li>Tracked operational KPIs using digital monitoring tools</li>
-        </ul>
-    </div>
+<div class="job">
+<h3>Process Engineer — Integraa Holding Srl</h3>
+<p>Sep 2025 – Mar 2026</p>
+<ul>
+<li>Applied Lean and Kaizen methods to streamline operations</li>
+<li>Performed process mapping and root cause analysis</li>
+<li>Led continuous improvement initiatives</li>
+<li>Tracked operational KPIs using digital monitoring tools</li>
+</ul>
+</div>
 
-    <div class="job">
-        <h3>Lab Intern — University of Padua</h3>
-        <p>Aug 2025 – Sep 2025</p>
-        <ul>
-            <li>Conducted metallurgical testing of aluminum samples</li>
-            <li>Performed microscopy analysis of grain structures</li>
-            <li>Supported materials characterization research</li>
-        </ul>
-    </div>
+<div class="job">
+<h3>Lab Intern — University of Padua</h3>
+<p>Aug 2025 – Sep 2025</p>
+<ul>
+<li>Conducted metallurgical testing of aluminum samples</li>
+<li>Performed microscopy analysis of grain structures</li>
+<li>Supported materials characterization research</li>
+</ul>
+</div>
 
-    <div class="job">
-        <h3>Inventory Analyst — Envante Srl</h3>
-        <p>Feb 2025 – Jul 2025</p>
-        <ul>
-            <li>Performed cycle counts and inventory audits</li>
-            <li>Applied 5S principles in warehouse environments</li>
-            <li>Used digital inventory systems and barcode scanners</li>
-        </ul>
-    </div>
+<div class="job">
+<h3>Inventory Analyst — Envante Srl</h3>
+<p>Feb 2025 – Jul 2025</p>
+<ul>
+<li>Performed cycle counts and inventory audits</li>
+<li>Applied 5S principles in warehouse environments</li>
+<li>Used digital inventory systems and barcode scanners</li>
+</ul>
+</div>
 
-    <div class="job">
-        <h3>Inventory Analyst — BARCODE Italia Srl</h3>
-        <p>Dec 2023 – Nov 2024</p>
-        <ul>
-            <li>Executed inventory verification processes</li>
-            <li>Coordinated stock counting and reconciliation</li>
-            <li>Worked with logistics and warehouse teams</li>
-        </ul>
-    </div>
+<div class="job">
+<h3>Inventory Analyst — BARCODE Italia Srl</h3>
+<p>Dec 2023 – Nov 2024</p>
+<ul>
+<li>Executed inventory verification processes</li>
+<li>Coordinated stock counting and reconciliation</li>
+<li>Worked with logistics and warehouse teams</li>
+</ul>
+</div>
 
-    <div class="job">
-        <h3>Assistant Manager — Pakistan Machine Tool Factory</h3>
-        <p>Mar 2021 – Sep 2023</p>
-        <ul>
-            <li>Managed a team of 50+ employees in CNC and forging departments</li>
-            <li>Achieved 95% of production targets</li>
-            <li>Improved CNC throughput by 8%</li>
-            <li>Reduced supplier delays through procurement optimization</li>
-        </ul>
-    </div>
+<div class="job">
+<h3>Assistant Manager — Pakistan Machine Tool Factory</h3>
+<p>Mar 2021 – Sep 2023</p>
+<ul>
+<li>Managed a team of 50+ employees in CNC and forging departments</li>
+<li>Achieved 95% of production targets</li>
+<li>Improved CNC throughput by 8%</li>
+<li>Reduced supplier delays through procurement optimization</li>
+</ul>
+</div>
 
-    <div class="job">
-        <h3>Trainee Engineer — AMROS Pharmaceuticals</h3>
-        <p>Nov 2019 – Mar 2021</p>
-        <ul>
-            <li>Managed preventive maintenance of production systems</li>
-            <li>Reduced equipment downtime by 15%</li>
-            <li>Maintained maintenance documentation and audit logs</li>
-        </ul>
-    </div>
+<div class="job">
+<h3>Trainee Engineer — AMROS Pharmaceuticals</h3>
+<p>Nov 2019 – Mar 2021</p>
+<ul>
+<li>Managed preventive maintenance of production systems</li>
+<li>Reduced equipment downtime by 15%</li>
+<li>Maintained maintenance documentation and audit logs</li>
+</ul>
+</div>
+
 </section>
 
 <section id="skills">
-    <h2>Skills</h2>
+<h2>Skills</h2>
 
-    <h3>Engineering</h3>
-    <p>CNC Machining • Forging Processes • AutoCAD • MasterCAM • Fusion 360</p>
+<h3>Engineering</h3>
+<p>CNC Machining • Forging Processes • AutoCAD • MasterCAM • Fusion 360</p>
 
-    <h3>Operations</h3>
-    <p>Lean Manufacturing • Six Sigma • Continuous Improvement • Process Mapping • Root Cause Analysis</p>
+<h3>Operations</h3>
+<p>Lean Manufacturing • Six Sigma • Continuous Improvement • Process Mapping • Root Cause Analysis</p>
 
-    <h3>Data & Analytics</h3>
-    <p>SAP ERP • SQL • Tableau • MATLAB • Excel • Plant Simulation</p>
+<h3>Data & Analytics</h3>
+<p>SAP ERP • SQL • Tableau • MATLAB • Excel • Plant Simulation</p>
 
-    <h3>Languages</h3>
-    <p>English (C1) • Italian (B1) • Urdu (Native) • Hindi (C1)</p>
+<h3>Languages</h3>
+<p>English (C1) • Italian (B1) • Urdu (Native) • Hindi (C1)</p>
 </section>
 
 <section id="education">
-    <h2>Education</h2>
+<h2>Education</h2>
 
-    <h3>MSc Management Engineering</h3>
-    <p>University of Padua, Italy | 2023 – 2026 | Average 28/30</p>
+<h3>MSc Management Engineering</h3>
+<p>University of Padua, Italy | 2023 – 2026 | Average 28/30</p>
 
-    <h3>B.E Mechanical & Manufacturing Engineering</h3>
-    <p>NED University of Engineering & Technology | GPA 3.81 / 4.00</p>
+<h3>B.E Mechanical & Manufacturing Engineering</h3>
+<p>NED University of Engineering & Technology | GPA 3.81 / 4.00</p>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ishtiaqabdullah97@gmail.com">ishtiaqabdullah97@gmail.com</a></p>
-    <p>Phone: +39 3509390007</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/engr-abdullah-ishtiaq-426312136" target="_blank">linkedin.com/in/engr-abdullah-ishtiaq</a></p>
-    <p>Portfolio: <a href="https://abdullahishtiaq123.github.io" target="_blank">abdullahishtiaq123.github.io</a></p>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:ishtiaqabdullah97@gmail.com">ishtiaqabdullah97@gmail.com</a></p>
+<p>Phone: +39 3509390007</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/engr-abdullah-ishtiaq-426312136" target="_blank">linkedin.com/in/engr-abdullah-ishtiaq</a></p>
+<p>Portfolio: <a href="https://abdullahishtiaq123.github.io" target="_blank">abdullahishtiaq123.github.io</a></p>
 </section>
 
 <footer>
-    <p>© 2026 Abdullah Ishtiaq</p>
+<p>© 2026 Abdullah Ishtiaq</p>
 </footer>
 
 </body>
